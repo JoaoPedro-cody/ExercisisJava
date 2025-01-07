@@ -1,4 +1,4 @@
-package entities;
+package exercise01.entities;
 
 public class Department {
 

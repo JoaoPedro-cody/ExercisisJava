@@ -1,9 +1,9 @@
-package application;
+package exercise01.application;
 
-import entities.Department;
-import entities.HourContract;
-import entities.Worker;
-import entities.enums.WorkerLevel;
+import exercise01.entities.Department;
+import exercise01.entities.HourContract;
+import exercise01.entities.Worker;
+import exercise01.entities.enums.WorkerLevel;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

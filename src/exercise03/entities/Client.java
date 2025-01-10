@@ -1,8 +1,12 @@
 package exercise03.entities;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Client {
+
+    private SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+
     private String name;
     private String email;
     private Date birthDate;
@@ -42,6 +46,6 @@ public class Client {
 
     @Override
     public String toString() {
-        return "Client: " + getName() + " (" + getBirthDate() + ") - " + getEmail();
+        return "Client: " + getName() + " (" + sdf.format(getBirthDate()) + ") - " + getEmail();
     }
 }

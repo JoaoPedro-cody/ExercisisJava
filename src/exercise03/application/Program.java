@@ -56,7 +56,6 @@ public class Program {
         System.out.println();
         System.out.println("Order Summary: ");
         System.out.println(order);
-        System.out.println("Order item");
 
         sc.close();
     }

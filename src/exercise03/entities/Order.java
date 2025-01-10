@@ -15,7 +15,7 @@ public class Order {
     private OrderStatus status;
 
     private Client client;
-    List<OrderItem> items = new ArrayList<>();
+    private List<OrderItem> items = new ArrayList<>();
 
     public Order(Date moment, OrderStatus status, Client client) {
         this.moment = moment;
@@ -65,13 +65,12 @@ public class Order {
 
     @Override
     public String toString() {
-        OrderItem item = new OrderItem();
         StringBuilder sb = new StringBuilder();
         sb.append("Order moment: " +  fmt2.format(moment) + "\n");
         sb.append("Order Status: " + status + "\n");
         sb.append(client + "\n");
         for (OrderItem j : items){
-            sb.append(items + "\n");
+            sb.append(j + "\n");
         }
         sb.append("Total price: $" + String.format("%.2f", total()));
         return sb.toString();
